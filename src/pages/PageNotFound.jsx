@@ -7,7 +7,7 @@ const PageNotFound = () => {
         <img src={NotFoundImage} alt="error404" />
       </div>
       <div>
-        <Link to="premierepulse">
+        <Link to="">
           <button className="p-3 bg-indigo-600 rounded-full text-white">
             Go Home
           </button>

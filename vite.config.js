@@ -6,5 +6,4 @@ import daisyui from "daisyui";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), eslintPlugin(), tailwindcss(), daisyui],
-  base: "/premierepulse/",
 });

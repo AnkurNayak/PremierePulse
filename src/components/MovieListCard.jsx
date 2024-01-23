@@ -7,7 +7,7 @@ const MovieListCard = ({ movie }) => {
   const navigate = useNavigate();
   // Navigate to detail Page and pass id
   const getMovieDetails = () => {
-    navigate(`/premierepulse/moviedetail/${movie.id}`);
+    navigate(`/moviedetail/${movie.id}`);
   };
 
   return (

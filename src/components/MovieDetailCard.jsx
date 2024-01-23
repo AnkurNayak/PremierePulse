@@ -2,6 +2,7 @@
 import StarSVG from "../assets/star.svg";
 import FormModal from "./Form";
 import React, { useEffect, useState } from "react";
+import { removeHtmlTags } from "../context/useMovieContext";
 
 /* eslint-disable react/prop-types */
 const MovieDetailCard = ({ movie }) => {
@@ -37,7 +38,7 @@ const MovieDetailCard = ({ movie }) => {
       </div>
       <div className="flex flex-col">
         <h1 className="text-3xl font-bold">{movie.name}</h1>
-        <p>{movie.summary}</p>
+        <p>{removeHtmlTags(movie.summary)}</p>
         <div className="flex font-smibold mt-4 gap-2 items-center">
           <p className="font-bold">{movie.network?.name}</p>
           {movie.genres.map((item, i) => (

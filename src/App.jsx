@@ -24,7 +24,7 @@ const App = () => {
         <Router>
           <Suspense fallback={<Loading />}>
             <Routes>
-              <Route path="/premierepulse" element={<HomePage />}>
+              <Route path="" element={<HomePage />}>
                 <Route index element={<Navigate replace to="movielist" />} />
                 <Route path="movielist" element={<MovieListPage />} />
                 <Route path="moviedetail/:id" element={<MovieDetailPage />} />
