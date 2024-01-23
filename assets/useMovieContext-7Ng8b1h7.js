@@ -1,0 +1,1 @@
+import{r,M as t}from"./index-V0n-Iq7l.js";const s=()=>{const e=r.useContext(t);if(!e)throw new Error("useSearch must be used within a SearchProvider");return e},n=e=>e.replace(/<[^>]*>/g,"");export{n as r,s as u};
